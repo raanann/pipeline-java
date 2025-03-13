@@ -9,13 +9,6 @@ trigger:
 pool: MyPoolLinux
 
 steps:
-- script: |
-    echo Starting the build
-    echo "PATH is :$PATH"
-    ls . 
-    sudo 'find / -name "mvn*" '
-    mvn package
-  displayName: 'Build with Maven'
 - task: Maven@4
   inputs:
     azureSubscription: 'Pay-As-You-Go(79e11bc8-2846-4509-ae83-087c5e76c959)'
