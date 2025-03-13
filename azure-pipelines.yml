@@ -11,8 +11,9 @@ pool: MyPoolLinux
 steps:
 - script: |
     echo Starting the build
-    echo "PATH is :$path"
-    find / -name "mvn*"
+    echo "PATH is :$PATH"
+    ls . 
+    sudo 'find / -name "mvn*" '
     mvn package
   displayName: 'Build with Maven'
 - task: Maven@4
