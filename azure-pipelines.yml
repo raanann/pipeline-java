@@ -6,7 +6,7 @@
 trigger:
 - main
 
-pool: example-pool-managed
+pool: MyPoolLinux
 
 steps:
 - task: Maven@3
