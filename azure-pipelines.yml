@@ -22,6 +22,8 @@ steps:
 
 - script: |
     echo Starting the build
+    echo "PATH is :$path"
+    find / -name "mvn*"
     mvn package
   displayName: 'Build with Maven'
 
